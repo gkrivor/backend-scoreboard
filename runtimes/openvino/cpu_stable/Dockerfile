@@ -20,7 +20,7 @@ COPY ./setup /root/setup
 RUN pip3 install --no-cache-dir -r /root/setup/requirements_report.txt
 
 ############## ONNX Backend dependencies ###########
-ENV ONNX_BACKEND="test_onnx.utils.onnx_backend"
+ENV ONNX_BACKEND="tests.tests_python.utils.onnx_backend"
 
 ARG OV_DIST_DIR=/openvino/dist
 
@@ -72,11 +72,10 @@ RUN make -j $(nproc)
 WORKDIR /openvino/ngraph/python
 # Below hack is needed because OpenVINO conftest.py, which sets up backand name variables,
 # is not called while running onnx backend tests.
-RUN sed -i 's/BACKEND_NAME = None/BACKEND_NAME = "CPU"/' /openvino/ngraph/python/tests/__init__.py
-RUN sed -i 's/cls.backend_name/"CPU"/' /openvino/ngraph/python/tests/test_onnx/utils/onnx_backend.py
+RUN sed -i 's/BACKEND_NAME = None/BACKEND_NAME = "CPU"/' /openvino/src/frontends/onnx/tests/__init__.py
 # End of hack
 
-ENV PYTHONPATH=/openvino/bin/intel64/Release/lib/python_api/python3.8:/openvino/ngraph/python/tests:${PYTHONPATH}
+ENV PYTHONPATH=/openvino/bin/intel64/Release/lib/python_api/python3.8:/openvino/src/frontends/onnx/:${PYTHONPATH}
 RUN pip3 install -r requirements.txt
 RUN pip3 install onnx
 ####################################################

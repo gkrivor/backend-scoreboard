@@ -64,15 +64,15 @@ RUN ninja install
 
 # This hack is needed because OpenVINO conftest.py, which sets up backand name variables,
 # is not called while running onnx backend tests.
-RUN sed -i 's/BACKEND_NAME = None/BACKEND_NAME = "TEMPLATE"/' /openvino/src/bindings/python/tests/__init__.py
+RUN sed -i 's/BACKEND_NAME = None/BACKEND_NAME = "TEMPLATE"/' /openvino/src/frontends/onnx/tests/__init__.py
 # End of hack
 
-WORKDIR /openvino/src/bindings/python
+WORKDIR /openvino/src/frontends/onnx
 RUN pip3 install -r requirements.txt
 RUN pip3 install numpy==1.23.0 --force-reinstall
 RUN pip3 install onnx
 
-ENV ONNX_BACKEND="tests.test_onnx.utils.onnx_backend"
+ENV ONNX_BACKEND="tests.tests_python.utils.onnx_backend"
 RUN export DEVICE_NAME="TEMPLATE"
 
 # ####################################################
