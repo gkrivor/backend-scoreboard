@@ -4,7 +4,7 @@
             "name": "OpenVINO CPU",
             "results_dir": "./results/openvino/cpu_stable",
             "core_packages": [
-                "ngraph-core"
+                "openvino"
             ],
             "dockerfile_link": "runtimes/openvino/cpu_stable/"
         },
@@ -12,7 +12,7 @@
             "name": "OpenVINO GPU",
             "results_dir": "./results/openvino/gpu_stable",
             "core_packages": [
-                "ngraph-core"
+                "openvino"
             ],
             "dockerfile_link": "runtimes/openvino/gpu_stable/"
         }
@@ -21,19 +21,25 @@
         "openvino-cpu": {
             "name": "OpenVINO CPU (dev)",
             "results_dir": "./results/openvino/cpu_dev",
-            "core_packages": [],
+            "core_packages": [
+                "openvino"
+            ],
             "dockerfile_link": "runtimes/openvino/cpu_dev/"
         },
         "openvino-gpu": {
             "name": "OpenVINO GPU (dev)",
             "results_dir": "./results/openvino/gpu_dev",
-            "core_packages": [],
+            "core_packages": [
+                "openvino"
+            ],
             "dockerfile_link": "runtimes/openvino/gpu_dev/"
         },
         "openvino-template": {
             "name": "OpenVINO TEMPLATE (dev)",
             "results_dir": "./results/openvino/template_dev",
-            "core_packages": [],
+            "core_packages": [
+                "openvino"
+            ],
             "dockerfile_link": "runtimes/openvino/template_dev/"
         }
     },

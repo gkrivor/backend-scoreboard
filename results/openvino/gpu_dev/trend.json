@@ -8,6 +8,10 @@
             {
                 "name": "onnx",
                 "version": "1.14.1"
+            },
+            {
+                "name": "openvino",
+                "version": "2023.2.0.dev20231024"
             }
         ]
     }
