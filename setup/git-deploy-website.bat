@@ -1,5 +1,5 @@
 git checkout master
 git pull
 git add ../docs
-git commit -m "Upadate website [skip ci]"
+git commit -m "Update website [skip ci]"
 git push
