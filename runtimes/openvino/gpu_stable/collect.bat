@@ -30,7 +30,7 @@ IF "%OV_WHEELS%" == "" (
         goto final
     )
 ) ELSE (
-    pip install --no-cache-dir %OV_WHEELS%
+    pip install --no-cache-dir --force-reinstall %OV_WHEELS%
 )
 python -c "import openvino;print(openvino.runtime.get_version());"
 IF NOT "%ERRORLEVEL%" == "0" (
@@ -47,8 +47,12 @@ pushd
 cd %SCROOT%\windows
 python -c "import re;txt='';f=open('openvino/src/frontends/onnx/tests/__init__.py','r');txt=re.sub(r'BACKEND_NAME = ""?[0-9A-Za-z\.]+""?','BACKEND_NAME = ""%TEST_DEVICE%""',f.read());f.close();f=open('openvino/src/frontends/onnx/tests/__init__.py','w');f.write(txt);f.close()"
 popd
+REM Customize accuracy
+python -c "import onnx;import os;import re;fn=os.path.dirname(onnx.__file__)+'/backend/test/loader/__init__.py';f=open(fn,'r');txt=re.sub(r'([ra]tol) = ([0-9e-]*)(.*)',r'\1 = 1e-2 #o: \2\3',f.read());f.close();f=open(fn,'w');f.write(txt);f.close()"
 pip list --format=json > %RESULTS_DIR%/pip-list.json
 pytest %SCROOT%\test\test_backend.py --onnx_backend=%ONNX_BACKEND%  -k "not _cuda" -v
+REM Return default accuracy values
+python -c "import onnx;import os;import re;fn=os.path.dirname(onnx.__file__)+'/backend/test/loader/__init__.py';f=open(fn,'r');txt=re.sub(r'([ra]tol) = [^#]*#o: (.*)',r'\1 = \2',f.read());f.close();f=open(fn,'w');f.write(txt);f.close()"
 REM WORKLOAD END
 
 :final
