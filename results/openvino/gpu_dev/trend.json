@@ -78,5 +78,21 @@
                 "version": "2023.2.0.dev20231107"
             }
         ]
+    },
+    {
+        "date": "01/18/2024 23:03:32",
+        "failed": 511,
+        "passed": 867,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "onnx",
+                "version": "1.15.0"
+            },
+            {
+                "name": "openvino",
+                "version": "2024.0.0.dev20240118"
+            }
+        ]
     }
 ]
