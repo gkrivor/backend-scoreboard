@@ -11,5 +11,5 @@ IF NOT EXIST venv (
 call venv\Scripts\activate.bat
 pip install -r ../requirements_web.txt
 pip install --no-cache-dir -r ../setup/requirements_report.txt 
-pip install onnx==1.14.1
+pip install onnx==1.15.0
 call venv\Scripts\deactivate
