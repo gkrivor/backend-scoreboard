@@ -15,6 +15,14 @@
                 "openvino"
             ],
             "dockerfile_link": "runtimes/openvino/gpu_stable/"
+        },
+        "openvino-npu": {
+            "name": "OpenVINO NPU",
+            "results_dir": "./results/openvino/npu_stable",
+            "core_packages": [
+                "openvino"
+            ],
+            "dockerfile_link": "runtimes/openvino/npu_stable/"
         }
     },
     "development": {
@@ -33,6 +41,14 @@
                 "openvino"
             ],
             "dockerfile_link": "runtimes/openvino/gpu_dev/"
+        },
+        "openvino-gpu": {
+            "name": "OpenVINO NPU (dev)",
+            "results_dir": "./results/openvino/npu_dev",
+            "core_packages": [
+                "openvino"
+            ],
+            "dockerfile_link": "runtimes/openvino/npu_dev/"
         },
         "openvino-template": {
             "name": "OpenVINO TEMPLATE (dev)",
