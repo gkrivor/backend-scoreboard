@@ -42,7 +42,7 @@
             ],
             "dockerfile_link": "runtimes/openvino/gpu_dev/"
         },
-        "openvino-gpu": {
+        "openvino-npu": {
             "name": "OpenVINO NPU (dev)",
             "results_dir": "./results/openvino/npu_dev",
             "core_packages": [
