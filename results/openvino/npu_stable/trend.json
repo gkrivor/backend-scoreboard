@@ -1,0 +1,18 @@
+[
+    {
+        "date": "04/30/2024 07:10:18",
+        "failed": 993,
+        "passed": 392,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "onnx",
+                "version": "1.15.0"
+            },
+            {
+                "name": "openvino",
+                "version": "2024.1.0"
+            }
+        ]
+    }
+]
