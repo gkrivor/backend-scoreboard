@@ -1014,5 +1014,21 @@
                 "version": "2024.1.0"
             }
         ]
+    },
+    {
+        "date": "07/23/2024 12:28:05",
+        "failed": 331,
+        "passed": 1070,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "onnx",
+                "version": "1.15.0"
+            },
+            {
+                "name": "openvino",
+                "version": "2024.3.0"
+            }
+        ]
     }
 ]
