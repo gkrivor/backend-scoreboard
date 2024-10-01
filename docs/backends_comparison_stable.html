@@ -166,6 +166,10 @@
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_ai_onnx_ml_label_encoder_tensor_value_only_mapping_cpu</th>
                 
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_ai_onnx_ml_tree_ensemble_set_membership_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_ai_onnx_ml_tree_ensemble_single_tree_cpu</th>
+                
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_and2d_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_and3d_cpu</th>
@@ -400,6 +404,10 @@
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_FLOAT16_to_FLOAT_cpu</th>
                 
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_FLOAT16_to_INT4_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_FLOAT16_to_UINT4_cpu</th>
+                
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_FLOAT8E4M3FNUZ_to_FLOAT16_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_FLOAT8E4M3FNUZ_to_FLOAT_cpu</th>
@@ -430,9 +438,25 @@
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_FLOAT_to_FLOAT8E5M2_cpu</th>
                 
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_FLOAT_to_INT4_cpu</th>
+                
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_FLOAT_to_STRING_cpu</th>
                 
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_FLOAT_to_UINT4_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_INT4_to_FLOAT16_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_INT4_to_FLOAT_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_INT4_to_INT8_cpu</th>
+                
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_STRING_to_FLOAT_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_UINT4_to_FLOAT16_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_UINT4_to_FLOAT_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_UINT4_to_UINT8_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_cast_no_saturate_FLOAT16_to_FLOAT8E4M3FNUZ_cpu</th>
                 
@@ -716,6 +740,8 @@
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_dequantizelinear_axis_cpu</th>
                 
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_dequantizelinear_blocked_cpu</th>
+                
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_dequantizelinear_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_dequantizelinear_e4m3fn_cpu</th>
@@ -725,6 +751,14 @@
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_dequantizelinear_e4m3fn_zero_point_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_dequantizelinear_e5m2_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_dequantizelinear_int16_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_dequantizelinear_int4_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_dequantizelinear_uint16_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_dequantizelinear_uint4_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_det_2d_cpu</th>
                 
@@ -1324,6 +1358,8 @@
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_maxpool_2d_ceil_cpu</th>
                 
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_maxpool_2d_ceil_output_size_reduce_by_one_cpu</th>
+                
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_maxpool_2d_default_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_maxpool_2d_dilations_cpu</th>
@@ -1628,17 +1664,41 @@
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_qlinearconv_cpu</th>
                 
-                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_qlinearmatmul_2D_cpu</th>
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_qlinearmatmul_2D_int8_float16_cpu</th>
                 
-                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_qlinearmatmul_3D_cpu</th>
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_qlinearmatmul_2D_int8_float32_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_qlinearmatmul_2D_uint8_float16_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_qlinearmatmul_2D_uint8_float32_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_qlinearmatmul_3D_int8_float16_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_qlinearmatmul_3D_int8_float32_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_qlinearmatmul_3D_uint8_float16_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_qlinearmatmul_3D_uint8_float32_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_quantizelinear_axis_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_quantizelinear_blocked_asymmetric_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_quantizelinear_blocked_symmetric_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_quantizelinear_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_quantizelinear_e4m3fn_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_quantizelinear_e5m2_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_quantizelinear_int16_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_quantizelinear_int4_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_quantizelinear_uint16_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_quantizelinear_uint4_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_range_float_type_positive_delta_cpu</th>
                 
@@ -3078,6 +3138,18 @@
                 </td>
             
                 <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
                     <div class='passed'>
                         Passed
                     </div>
@@ -3776,6 +3848,18 @@
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -3842,6 +3926,54 @@
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -4724,12 +4856,30 @@
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -4742,12 +4892,24 @@
                 <td class="testResult" >
                     <div class='failed'>
                         Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='passed'>
+                        Passed
                     </div>
                 </td>
             
                 <td class="testResult" >
                     <div class='failed'>
                         Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='passed'>
+                        Passed
                     </div>
                 </td>
             
@@ -5454,8 +5616,8 @@
                 </td>
             
                 <td class="testResult" >
-                    <div class='passed'>
-                        Passed
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -5466,8 +5628,8 @@
                 </td>
             
                 <td class="testResult" >
-                    <div class='passed'>
-                        Passed
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -6548,6 +6710,12 @@
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -7310,6 +7478,12 @@
                 <td class="testResult" >
                     <div class='failed'>
                         Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='passed'>
+                        Passed
                     </div>
                 </td>
             
@@ -7454,16 +7628,52 @@
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
                 <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
                     <div class='passed'>
                         Passed
                     </div>
@@ -7472,16 +7682,40 @@
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
                 <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
                 <td class="testResult" >
+                    <div class='failed'>
+                        Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
                     <div class='passed'>
                         Passed
                     </div>
@@ -7490,6 +7724,12 @@
                 <td class="testResult" >
                     <div class='failed'>
                         Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='passed'>
+                        Passed
                     </div>
                 </td>
             
@@ -29555,30 +29795,6 @@
             </td>
         
             <td class="testResult">
-                <div class='passed'>
-                    Passed
-                </div>
-            </td>
-        
-            <td class="testResult">
-                <div class='passed'>
-                    Passed
-                </div>
-            </td>
-        
-            <td class="testResult">
-                <div class='passed'>
-                    Passed
-                </div>
-            </td>
-        
-            <td class="testResult">
-                <div class='failed'>
-                    Failed
-                </div>
-            </td>
-        
-            <td class="testResult">
                 <div class='failed'>
                     Failed
                 </div>
@@ -29591,8 +29807,8 @@
             </td>
         
             <td class="testResult">
-                <div class='failed'>
-                    Failed
+                <div class='passed'>
+                    Passed
                 </div>
             </td>
         
@@ -29633,14 +29849,38 @@
             </td>
         
             <td class="testResult">
+                <div class='passed'>
+                    Passed
+                </div>
+            </td>
+        
+            <td class="testResult">
                 <div class='failed'>
                     Failed
                 </div>
             </td>
         
             <td class="testResult">
-                <div class='156/193 node tests passed'>
-                    156/193 
+                <div class='failed'>
+                    Failed
+                </div>
+            </td>
+        
+            <td class="testResult">
+                <div class='failed'>
+                    Failed
+                </div>
+            </td>
+        
+            <td class="testResult">
+                <div class='failed'>
+                    Failed
+                </div>
+            </td>
+        
+            <td class="testResult">
+                <div class='155/193 node tests passed'>
+                    155/193 
                 </div>
             </td>
         
