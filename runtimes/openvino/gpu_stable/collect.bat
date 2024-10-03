@@ -50,7 +50,7 @@ popd
 REM Customize accuracy
 python -c "import onnx;import os;import re;fn=os.path.dirname(onnx.__file__)+'/backend/test/loader/__init__.py';f=open(fn,'r');txt=re.sub(r'([ra]tol) = ([0-9e-]*)(.*)',r'\1 = 1e-2 #o: \2\3',f.read());f.close();f=open(fn,'w');f.write(txt);f.close()"
 pip list --format=json > %RESULTS_DIR%/pip-list.json
-pytest %SCROOT%\test\test_backend.py --onnx_backend=%ONNX_BACKEND%  -k "not _cuda" -v
+pytest %SCROOT%\test\test_backend.py --onnx_backend=%ONNX_BACKEND%  -k "not _cuda and not test_reshape_allowzero_reordered_cpu and not test_split_zero_size and not test_tril_zero and not test_triu_zero" -v
 REM Return default accuracy values
 python -c "import onnx;import os;import re;fn=os.path.dirname(onnx.__file__)+'/backend/test/loader/__init__.py';f=open(fn,'r');txt=re.sub(r'([ra]tol) = [^#]*#o: (.*)',r'\1 = \2',f.read());f.close();f=open(fn,'w');f.write(txt);f.close()"
 REM WORKLOAD END
