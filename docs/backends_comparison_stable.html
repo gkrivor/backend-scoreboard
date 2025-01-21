@@ -700,6 +700,10 @@
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_convtranspose_dilations_cpu</th>
                 
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_convtranspose_group_2_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_convtranspose_group_2_image_3_cpu</th>
+                
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_convtranspose_kernel_shape_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_convtranspose_output_shape_cpu</th>
@@ -1850,6 +1854,8 @@
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_reduce_max_do_not_keepdims_random_cpu</th>
                 
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_reduce_max_empty_set_cpu</th>
+                
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_reduce_max_keepdims_example_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_reduce_max_keepdims_random_cpu</th>
@@ -1919,6 +1925,8 @@
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_reduce_sum_do_not_keepdims_example_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_reduce_sum_do_not_keepdims_random_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_reduce_sum_empty_axes_input_noop_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_reduce_sum_empty_axes_input_noop_example_cpu</th>
                 
@@ -2040,6 +2048,8 @@
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_resize_tf_crop_and_resize_cpu</th>
                 
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_resize_tf_crop_and_resize_extrapolation_value_cpu</th>
+                
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_resize_upsample_scales_cubic_A_n0p5_exclude_outside_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_resize_upsample_scales_cubic_align_corners_cpu</th>
@@ -2073,6 +2083,8 @@
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_resize_upsample_sizes_nearest_floor_align_corners_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_resize_upsample_sizes_nearest_not_larger_cpu</th>
+                
+                        <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_resize_upsample_sizes_nearest_not_smaller_cpu</th>
                 
                         <th class="testName" scope="row">OnnxBackendNodeModelTest :: test_resize_upsample_sizes_nearest_round_prefer_ceil_asymmetric_cpu</th>
                 
@@ -4020,8 +4032,8 @@
                 </td>
             
                 <td class="testResult" >
-                    <div class='passed'>
-                        Passed
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -4032,8 +4044,8 @@
                 </td>
             
                 <td class="testResult" >
-                    <div class='passed'>
-                        Passed
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -4044,8 +4056,8 @@
                 </td>
             
                 <td class="testResult" >
-                    <div class='passed'>
-                        Passed
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -4056,8 +4068,8 @@
                 </td>
             
                 <td class="testResult" >
-                    <div class='passed'>
-                        Passed
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -4724,6 +4736,18 @@
                 <td class="testResult" >
                     <div class='failed'>
                         Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='passed'>
+                        Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='passed'>
+                        Passed
                     </div>
                 </td>
             
@@ -8024,6 +8048,12 @@
                 <td class="testResult" >
                     <div class='failed'>
                         Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='passed'>
+                        Passed
                     </div>
                 </td>
             
@@ -8180,6 +8210,12 @@
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -8726,6 +8762,12 @@
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -8852,6 +8894,12 @@
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -13380,6 +13428,18 @@
                 </td>
             
                 <td class="testResult" >
+                    <div class='passed'>
+                        Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='passed'>
+                        Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
                     <div class='failed'>
                         Failed
                     </div>
@@ -16766,6 +16826,12 @@
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -16988,6 +17054,12 @@
                 <td class="testResult" >
                     <div class='failed'>
                         Failed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='passed'>
+                        Passed
                     </div>
                 </td>
             
@@ -17028,8 +17100,8 @@
                 </td>
             
                 <td class="testResult" >
-                    <div class='passed'>
-                        Passed
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -17312,6 +17384,12 @@
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
@@ -17438,6 +17516,12 @@
                 <td class="testResult" >
                     <div class='passed'>
                         Passed
+                    </div>
+                </td>
+            
+                <td class="testResult" >
+                    <div class='failed'>
+                        Failed
                     </div>
                 </td>
             
