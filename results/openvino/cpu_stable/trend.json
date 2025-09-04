@@ -1080,22 +1080,6 @@
         ]
     },
     {
-        "date": "01/21/2025 12:15:42",
-        "failed": 0,
-        "passed": 0,
-        "skipped": 0,
-        "versions": [
-            {
-                "name": "onnx",
-                "version": "1.17.0"
-            },
-            {
-                "name": "openvino",
-                "version": "2025.0.0"
-            }
-        ]
-    },
-    {
         "date": "01/21/2025 12:29:17",
         "failed": 341,
         "passed": 1096,
@@ -1124,6 +1108,22 @@
             {
                 "name": "openvino",
                 "version": "2025.1.0"
+            }
+        ]
+    },
+    {
+        "date": "09/04/2025 10:47:44",
+        "failed": 336,
+        "passed": 1101,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "onnx",
+                "version": "1.17.0"
+            },
+            {
+                "name": "openvino",
+                "version": "2025.2.1"
             }
         ]
     }
