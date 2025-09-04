@@ -166,5 +166,17 @@
                 "version": "1.16.0"
             }
         ]
+    },
+    {
+        "date": "09/04/2025 11:19:12",
+        "failed": 354,
+        "passed": 1077,
+        "skipped": 0,
+        "versions": [
+            {
+                "name": "onnx",
+                "version": "1.17.0"
+            }
+        ]
     }
 ]
