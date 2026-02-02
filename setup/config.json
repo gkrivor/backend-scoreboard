@@ -1,5 +1,14 @@
 {
     "stable": {
+        "migraphx_ort_win": {
+            "name": "ONNXRuntime Windows (MIGraphX)",
+            "results_dir": "./results/migraphx_ort_win/stable",
+            "core_packages": [
+                "onnxruntime-migraphx",
+				"torch"
+            ],
+            "dockerfile_link": "runtimes/migraphx_ort_win/stable/"
+        },
         "openvino-cpu": {
             "name": "OpenVINO CPU",
             "results_dir": "./results/openvino/cpu_stable",
