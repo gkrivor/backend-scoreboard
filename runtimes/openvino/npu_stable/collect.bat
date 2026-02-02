@@ -17,6 +17,7 @@ set TEST_DEVICE=NPU
 set PYTHONPATH=%SCROOT%\windows\openvino\src\frontends\onnx\;%PYTHONPATH%
 set RESULTS_DIR=%SCROOT%\results\openvino\npu_stable
 set CSVDIR=%SCROOT%\results\openvino\npu_stable
+set ONNX_BACKEND=tests.tests_python.utils.onnx_backend
 REM Comment line below if you would use manually built OpenVINO
 set OV_WHEELS=%OV_STABLE%
 REM Session variables END

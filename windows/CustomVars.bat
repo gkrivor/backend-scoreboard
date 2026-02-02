@@ -1,4 +1,3 @@
-set ONNX_BACKEND=tests.tests_python.utils.onnx_backend
 REM If you want to provide settings for manually built OpenVINO - use next variables...
 REM set PATH=%PATH%;e:\openvino\ov_onnx\bin\intel64\RelWithDebInfo;e:\openvino\ov_onnx\temp\tbb\bin;
 REM set OPENVINO_LIB_PATHS=e:\openvino\ov_onnx\bin\intel64\RelWithDebInfo;
