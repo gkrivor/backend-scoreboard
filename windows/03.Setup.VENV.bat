@@ -12,4 +12,5 @@ call venv\Scripts\activate.bat
 pip install -r ../requirements_web.txt
 pip install --no-cache-dir -r ../setup/requirements_report.txt 
 pip install onnx==1.17.0
+pip install setuptools==79.0.0
 call venv\Scripts\deactivate
