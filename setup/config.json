@@ -1,62 +1,46 @@
 {
     "stable": {
-        "openvino-cpu": {
-            "name": "OpenVINO CPU",
-            "results_dir": "./results/openvino/cpu_stable",
+        "migraphx-cpu": {
+            "name": "MIGraphX CPU",
+            "results_dir": "./results/migraphx/cpu_stable",
             "core_packages": [
-                "openvino"
+                "migraphx",
+				"onnxruntime",
+				"rocm"
             ],
-            "dockerfile_link": "runtimes/openvino/cpu_stable/"
+            "dockerfile_link": "runtimes/migraphx/cpu_stable/"
         },
-        "openvino-gpu": {
-            "name": "OpenVINO GPU",
-            "results_dir": "./results/openvino/gpu_stable",
+        "migraphx-gpu": {
+            "name": "MIGraphX GPU",
+            "results_dir": "./results/migraphx/gpu_stable",
             "core_packages": [
-                "openvino"
+                "migraphx",
+				"onnxruntime",
+				"rocm"
             ],
-            "dockerfile_link": "runtimes/openvino/gpu_stable/"
-        },
-        "openvino-npu": {
-            "name": "OpenVINO NPU",
-            "results_dir": "./results/openvino/npu_stable",
-            "core_packages": [
-                "openvino"
-            ],
-            "dockerfile_link": "runtimes/openvino/npu_stable/"
+            "dockerfile_link": "runtimes/migraphx/gpu_stable/"
         }
     },
     "development": {
-        "openvino-cpu": {
-            "name": "OpenVINO CPU (dev)",
-            "results_dir": "./results/openvino/cpu_dev",
+        "migraphx-cpu": {
+            "name": "MIGraphX CPU (dev)",
+            "results_dir": "./results/migraphx/cpu_dev",
             "core_packages": [
-                "openvino"
+                "migraphx",
+				"onnxruntime",
+				"rocm"
             ],
-            "dockerfile_link": "runtimes/openvino/cpu_dev/"
+            "dockerfile_link": "runtimes/migraphx/cpu_dev/"
         },
-        "openvino-gpu": {
-            "name": "OpenVINO GPU (dev)",
-            "results_dir": "./results/openvino/gpu_dev",
+        "migraphx-gpu": {
+            "name": "MIGraphX GPU (dev)",
+            "results_dir": "./results/migraphx/gpu_dev",
             "core_packages": [
-                "openvino"
+                "migraphx",
+				"onnxruntime",
+				"rocm"
             ],
-            "dockerfile_link": "runtimes/openvino/gpu_dev/"
-        },
-        "openvino-npu": {
-            "name": "OpenVINO NPU (dev)",
-            "results_dir": "./results/openvino/npu_dev",
-            "core_packages": [
-                "openvino"
-            ],
-            "dockerfile_link": "runtimes/openvino/npu_dev/"
-        },
-        "openvino-template": {
-            "name": "OpenVINO TEMPLATE (dev)",
-            "results_dir": "./results/openvino/template_dev",
-            "core_packages": [
-                "openvino"
-            ],
-            "dockerfile_link": "runtimes/openvino/template_dev/"
+            "dockerfile_link": "runtimes/migraphx/gpu_dev/"
         }
     },
     "deploy_paths": {
