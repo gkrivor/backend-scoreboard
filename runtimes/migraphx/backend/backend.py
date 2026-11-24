@@ -41,7 +41,7 @@ from onnx_migraphx.backend_rep import MIGraphXBackendRep
 
 
 def get_device():
-    return ("CPU", "GPU")
+    return ("CPU", "GPU", "REF")
 
 
 class MIGraphXBackend(Backend):
