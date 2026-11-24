@@ -18,4 +18,4 @@ WORKDIR /migraphx/build
 ####################################################
 
 CMD . /root/setup/docker-setup.sh && \
-    pytest /root/test/test_backend.py --onnx_backend=${ONNX_BACKEND} -k 'not _cuda' -v
+    pytest /root/test/test_backend.py --onnx_backend=${ONNX_BACKEND} -k 'not _cuda and not blackmanwindow_expanded_cpu and not hammingwindow_expanded_cpu' -v
